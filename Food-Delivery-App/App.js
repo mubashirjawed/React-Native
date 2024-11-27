@@ -1,50 +1,47 @@
 import React from "react";
-import { View, Text, Image, StyleSheet, TouchableOpacity } from "react-native";
+import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from "react-native";
 
 const App = () => {
   return (
-    <View style={styles.container}>
-      {/* Background Design */}
-      <View style={styles.background}>
-        <Text style={styles.fizzText}>FIZZ BOOOM</Text>
+    <ImageBackground
+    source={require('./assets/background-image.png')} // अपनी बैकग्राउंड इमेज URL डालें
+      style={styles.backgroundImage}
+      resizeMode="cover"
+    >
+      <View style={styles.container}>
+        {/* Can Image */}
+        <Image
+          source={require('./assets/images/fizz01.png')} // अपनी can image URL डालें
+          style={styles.canImage}
+        />
+
+        {/* Text Section */}
+        <Text style={styles.title}>ENJOY EVERY SIP</Text>
+        <Text style={styles.subTitle}>
+          The ultimate refreshing drink to enjoy in every festival
+        </Text>
+
+        {/* Buy Button */}
+        <TouchableOpacity style={styles.buyButton}>
+          <Text style={styles.buyButtonText}>Buy</Text>
+        </TouchableOpacity>
       </View>
-
-      {/* Can Image */}
-      <Image source={"./assets/images/fizz01.png"} style={styles.canImage} />
-
-      {/* Text Section */}
-      <Text style={styles.title}>ENJOY EVERY SIP</Text>
-      <Text style={styles.subTitle}>
-        The ultimate refreshing drink to enjoy in every festival
-      </Text>
-
-      {/* Buy Button */}
-      <TouchableOpacity style={styles.buyButton}>
-        <Text style={styles.buyButtonText}>Buy</Text>
-      </TouchableOpacity>
-    </View>
+    </ImageBackground>
   );
 };
 
 const styles = StyleSheet.create({
+  backgroundImage: {
+    flex: 1,
+    width: "100%",
+    height: "100%",
+  },
   container: {
     flex: 1,
-    backgroundColor: "#001F29",
     alignItems: "center",
     justifyContent: "center",
     paddingHorizontal: 20,
-  },
-  background: {
-    position: "absolute",
-    top: 100,
-    zIndex: -1,
-  },
-  fizzText: {
-    fontSize: 50,
-    fontWeight: "bold",
-    color: "#004F5A",
-    opacity: 0.1,
-    textAlign: "center",
+    backgroundColor: "rgba(0, 0, 0, 0.6)", // बैकग्राउंड डार्क करने के लिए ओवरले
   },
   canImage: {
     width: 150,
