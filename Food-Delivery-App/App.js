@@ -4,7 +4,7 @@ import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from
 const App = () => {
   return (
     <ImageBackground
-    source={require('./assets/background-image.png')} // अपनी बैकग्राउंड इमेज URL डालें
+    source={require('./assets/images/bg-text.png')} // अपनी बैकग्राउंड इमेज URL डालें
       style={styles.backgroundImage}
       resizeMode="cover"
     >
