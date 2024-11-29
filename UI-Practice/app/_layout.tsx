@@ -98,7 +98,7 @@ const Card = ({
   return (
     <View style={[Styles.card, { backgroundColor: bgColor }]}>
       <Text style={{ textAlign: "right" }}>{title}</Text>
-      <MaterialIcons name={icon} size={80} color="black" />
+      <MaterialIcons name={icon} size={95} color="#41444B" />
     </View>
   );
 };
