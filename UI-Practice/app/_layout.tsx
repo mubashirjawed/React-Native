@@ -66,8 +66,8 @@ export default function RootLayout() {
 
       <View style={Styles.cardView}>
         <View style={Styles.cardRow}>
-          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
-          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
+          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#c1e1c5"} />
+          <Card title={"Ride"} icon={"bike-scooter"} bgColor={"#bedadc"} />
         </View>
         <View style={Styles.cardRow}>
           <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
@@ -82,11 +82,19 @@ export default function RootLayout() {
   );
 }
 
-const Card = ({ bgColor, icon, title }) => {
+const Card = ({
+  bgColor,
+  icon,
+  title,
+}: {
+  bgColor: string;
+  icon: any;
+  title: string;
+}) => {
   return (
     <View style={[Styles.card, { backgroundColor: bgColor }]}>
       <Text style={{ textAlign: "right" }}>{title}</Text>
-      <MaterialIcons name={icon} size={80} color="green" />
+      <MaterialIcons name={icon} size={80} color="black" />
     </View>
   );
 };
@@ -151,8 +159,10 @@ const Styles = StyleSheet.create({
   },
   card: {
     flex: 1,
-    borderWidth: 1,
-    borderColor: "blue",
+    // borderWidth: 1,
+    // borderColor: "blue",
     borderRadius: 12,
+    padding: 10,
+    justifyContent: "space-around",
   },
 });
