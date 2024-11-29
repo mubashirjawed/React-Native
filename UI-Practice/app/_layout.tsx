@@ -103,6 +103,7 @@ const Card = ({
   );
 };
 
+
 const Styles = StyleSheet.create({
   container: {
     flex: 1,
