@@ -61,6 +61,10 @@ export default function RootLayout() {
         <MaterialIcons name="attach-money" size={24} color="green" />
         <MaterialIcons name="message" size={24} color="green" />
       </View>
+
+      {/* card View */}
+
+      <View style={Styles.cardView}></View>
     </View>
   );
 }
@@ -112,5 +116,9 @@ const Styles = StyleSheet.create({
     shadowRadius: 1.0,
 
     elevation: 1,
+  },
+  cardView: {
+    flex: 1,
+    backgroundColor: "orange",
   },
 });
