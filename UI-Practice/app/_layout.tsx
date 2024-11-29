@@ -57,7 +57,10 @@ export default function RootLayout() {
 
       {/* info */}
 
-      <View style={Styles.infoView}></View>
+      <View style={Styles.infoView}>
+        <MaterialIcons name="attach-money" size={24} color="green" />
+        <MaterialIcons name="message" size={24} color="green" />
+      </View>
     </View>
   );
 }
