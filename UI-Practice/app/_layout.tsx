@@ -70,12 +70,16 @@ export default function RootLayout() {
           <Card title={"Ride"} icon={"bike-scooter"} bgColor={"#bedadc"} />
         </View>
         <View style={Styles.cardRow}>
-          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#DFCCFB"} />
-          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ECE5C7"} />
+          <Card
+            title={"Delivery"}
+            icon={"delivery-dining"}
+            bgColor={"#DFCCFB"}
+          />
+          <Card title={"Mobile"} icon={"send-to-mobile"} bgColor={"#ECE5C7"} />
         </View>
         <View style={Styles.cardRow}>
-          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#D7D3BF"} />
-          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#9ED2BE"} />
+          <Card title={"Shop"} icon={"shopify"} bgColor={"#D7D3BF"} />
+          <Card title={"Savings"} icon={"savings"} bgColor={"#9ED2BE"} />
         </View>
       </View>
     </View>
