@@ -4,6 +4,7 @@ import {
   ThemeProvider,
 } from "@react-navigation/native";
 import { useFonts } from "expo-font";
+import MaterialIcons from "@expo/vector-icons/MaterialIcons";
 import { Stack } from "expo-router";
 import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
@@ -35,7 +36,9 @@ export default function RootLayout() {
   return (
     <View style={Styles.container}>
       <View style={Styles.header}>
+        <MaterialIcons name="menu" size={24} color="black" />
         <Text style={Styles.headerTxt}>BYKEA</Text>
+        <MaterialIcons name="add-call" size={24} color="black" />
       </View>
     </View>
   );
@@ -52,10 +55,10 @@ const Styles = StyleSheet.create({
   },
   header: {
     height: 50,
-    borderBottomColor: "#ccc", 
-    borderBottomWidth: 1, 
+    borderBottomColor: "#ccc",
+    borderBottomWidth: 1,
     flexDirection: "row",
-    alignItems: "center", 
-    justifyContent: "center", 
+    alignItems: "center",
+    justifyContent: "space-between",
   },
 });
