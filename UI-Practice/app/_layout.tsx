@@ -64,7 +64,20 @@ export default function RootLayout() {
 
       {/* card View */}
 
-      <View style={Styles.cardView}></View>
+      <View style={Styles.cardView}>
+        <View style={Styles.cardRow}>
+          <View style={Styles.card}></View>
+          <View style={Styles.card}></View>
+        </View>
+        <View style={Styles.cardRow}>
+          <View style={Styles.card}></View>
+          <View style={Styles.card}></View>
+        </View>
+        <View style={Styles.cardRow}>
+          <View style={Styles.card}></View>
+          <View style={Styles.card}></View>
+        </View>
+      </View>
     </View>
   );
 }
@@ -119,6 +132,19 @@ const Styles = StyleSheet.create({
   },
   cardView: {
     flex: 1,
-    backgroundColor: "orange",
+    margin: 20,
+    gap: 15,
+  },
+  cardRow: {
+    flex: 1,
+    // borderWidth: 1,
+    flexDirection: "row",
+    gap: 15,
+  },
+  card: {
+    flex: 1,
+    borderWidth: 1,
+    borderColor: "blue",
+    borderRadius: 12,
   },
 });
