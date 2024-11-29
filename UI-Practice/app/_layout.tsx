@@ -66,16 +66,16 @@ export default function RootLayout() {
 
       <View style={Styles.cardView}>
         <View style={Styles.cardRow}>
-          <View style={Styles.card}></View>
-          <View style={Styles.card}></View>
+          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
+          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
         </View>
         <View style={Styles.cardRow}>
-          <View style={Styles.card}></View>
-          <View style={Styles.card}></View>
+          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
+          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
         </View>
         <View style={Styles.cardRow}>
-          <View style={Styles.card}></View>
-          <View style={Styles.card}></View>
+          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
+          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
         </View>
       </View>
     </View>
@@ -84,9 +84,9 @@ export default function RootLayout() {
 
 const Card = ({ bgColor, icon, title }) => {
   return (
-    <View style={Styles.card}>
+    <View style={[Styles.card, { backgroundColor: bgColor }]}>
       <Text style={{ textAlign: "right" }}>{title}</Text>
-      <MaterialIcons name={icon} size={24} color="green" />
+      <MaterialIcons name={icon} size={80} color="green" />
     </View>
   );
 };
