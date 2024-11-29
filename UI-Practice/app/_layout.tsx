@@ -70,12 +70,12 @@ export default function RootLayout() {
           <Card title={"Ride"} icon={"bike-scooter"} bgColor={"#bedadc"} />
         </View>
         <View style={Styles.cardRow}>
-          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
-          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
+          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#7FA1C3"} />
+          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#FFD09B"} />
         </View>
         <View style={Styles.cardRow}>
-          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
-          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#ccc"} />
+          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#D7D3BF"} />
+          <Card title={"Carpool"} icon={"directions-car"} bgColor={"#9ED2BE"} />
         </View>
       </View>
     </View>
