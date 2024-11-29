@@ -37,11 +37,13 @@ export default function RootLayout() {
   return (
     <View style={Styles.container}>
       {/* header */}
+
       <View style={Styles.header}>
         <MaterialIcons name="menu" size={24} color="black" />
         <Text style={Styles.headerTxt}>BYKEA</Text>
         <MaterialIcons name="add-call" size={24} color="black" />
       </View>
+
       {/* banner */}
 
       <View style={Styles.bannerView}>
@@ -52,6 +54,10 @@ export default function RootLayout() {
           }}
         />
       </View>
+
+      {/* info */}
+
+      <View style={Styles.infoView}></View>
     </View>
   );
 }
@@ -81,7 +87,27 @@ const Styles = StyleSheet.create({
     paddingTop: 10,
   },
   bannerImg: {
-    height: "90%",
+    height: "86%",
     borderRadius: 20,
+  },
+  infoView: {
+    height: 45,
+    flexDirection: "row",
+    justifyContent: "space-around",
+    alignItems: "center",
+    backgroundColor: "#fff",
+    borderRadius: 12,
+    marginTop: -15,
+    marginHorizontal: 20,
+
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 1,
+    },
+    shadowOpacity: 0.18,
+    shadowRadius: 1.0,
+
+    elevation: 1,
   },
 });
