@@ -10,13 +10,12 @@ import {
 
 const App = () => {
   return (
-
     <ImageBackground
       source={require("./assets/images/bg-text.png")}
       style={styles.backgroundImage}
       resizeMode="cover"
     >
-        {/* Can Image */}
+      {/* Can Image */}
       <View style={styles.container}>
         <Image
           source={require("./assets/images/fizz01.png")}
