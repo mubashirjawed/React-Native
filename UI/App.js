@@ -10,14 +10,14 @@ import {
 
 const App = () => {
   return (
-    
+
     <ImageBackground
       source={require("./assets/images/bg-text.png")} // अपनी बैकग्राउंड इमेज URL डालें
       style={styles.backgroundImage}
       resizeMode="cover"
     >
-      <View style={styles.container}>
         {/* Can Image */}
+      <View style={styles.container}>
         <Image
           source={require("./assets/images/fizz01.png")} // अपनी can image URL डालें
           style={styles.canImage}
