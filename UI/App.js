@@ -19,7 +19,7 @@ const App = () => {
         {/* Can Image */}
       <View style={styles.container}>
         <Image
-          source={require("./assets/images/fizz01.png")} // अपनी can image URL डालें
+          source={require("./assets/images/fizz01.png")}
           style={styles.canImage}
         />
 
