@@ -10,6 +10,7 @@ import {
 
 const App = () => {
   return (
+    
     <ImageBackground
       source={require("./assets/images/bg-text.png")} // अपनी बैकग्राउंड इमेज URL डालें
       style={styles.backgroundImage}
