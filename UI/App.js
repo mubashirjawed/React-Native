@@ -1,17 +1,24 @@
 import React from "react";
-import { View, Text, Image, StyleSheet, TouchableOpacity, ImageBackground } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  StyleSheet,
+  TouchableOpacity,
+  ImageBackground,
+} from "react-native";
 
 const App = () => {
   return (
     <ImageBackground
-    source={require('./assets/images/bg-text.png')} // अपनी बैकग्राउंड इमेज URL डालें
+      source={require("./assets/images/bg-text.png")} // अपनी बैकग्राउंड इमेज URL डालें
       style={styles.backgroundImage}
       resizeMode="cover"
     >
       <View style={styles.container}>
         {/* Can Image */}
         <Image
-          source={require('./assets/images/fizz01.png')} // अपनी can image URL डालें
+          source={require("./assets/images/fizz01.png")} // अपनी can image URL डालें
           style={styles.canImage}
         />
 
@@ -41,7 +48,7 @@ const styles = StyleSheet.create({
     alignItems: "center",
     justifyContent: "center",
     paddingHorizontal: 20,
-    backgroundColor: "rgba(0, 0, 0, 0.6)", // बैकग्राउंड डार्क करने के लिए ओवरले
+    backgroundColor: "rgba(0, 0, 0, 0.6)",
   },
   canImage: {
     width: 150,
