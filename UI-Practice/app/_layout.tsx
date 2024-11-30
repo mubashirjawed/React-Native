@@ -50,7 +50,7 @@ export default function RootLayout() {
         <Image
           style={Styles.bannerImg}
           source={{
-            uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZlehOF0EnLGJDTPc3TrBz93V25TIul_sNrQ&s",
+            uri: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTQzwjbXzb6hQYGnitjGce_YfI0YY6e6yTzg&s",
           }}
         />
       </View>
@@ -128,7 +128,7 @@ const Styles = StyleSheet.create({
     paddingTop: 10,
   },
   bannerImg: {
-    height: "86%",
+    height: "90%",
     borderRadius: 20,
   },
   infoView: {
