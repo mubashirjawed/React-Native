@@ -10,6 +10,8 @@ import * as SplashScreen from "expo-splash-screen";
 import { StatusBar } from "expo-status-bar";
 import { useEffect } from "react";
 import "react-native-reanimated";
+import { store } from '../store/store'
+import { Provider } from 'react-redux'
 
 import { useColorScheme } from "@/hooks/useColorScheme";
 import { Text, View, StyleSheet, Dimensions, Image } from "react-native";
